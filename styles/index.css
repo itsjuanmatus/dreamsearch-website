@@ -100,6 +100,14 @@ p {
   margin-top: 1rem;
 }
 
+.text-light-red {
+  color: #ff4e50;
+}
+
+.light {
+  font-weight: 300;
+}
+
 .user-buttons {
   position: absolute;
   margin-top: 1.2rem;
@@ -332,7 +340,7 @@ p {
 .grid {
   display: -ms-grid;
   display: grid;
-  padding: 1.2rem;
+  padding: 3rem;
 }
 
 .interest-input {
@@ -340,11 +348,92 @@ p {
   display: -ms-flexbox;
   display: flex;
   justify-self: center;
-  border: 1 solid;
+  border: 1px solid #d4d4d4;
   border-radius: 0.2rem;
   padding-block: 0.6rem;
   padding-left: 0.6rem;
+  padding-right: 8rem;
   width: 100%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   color: #999999;
+  margin-top: 1rem;
+}
+
+.search-patterns {
+  padding-block: 0.8rem;
+  margin-top: 0.8rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding-inline: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+}
+
+footer {
+  padding-block: 2rem;
+  border-top: 2px solid #ff4e50;
+}
+
+footer .light {
+  margin-block: 1rem;
+}
+
+footer .footer-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+footer .footer-grid h3 {
+  font-size: 0.8rem;
+}
+
+footer .footer-grid .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+  margin-top: 0.5rem;
+  padding: 0;
+  padding-inline: 2rem;
+}
+
+footer .footer-grid .grid p {
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+footer .footer-grid .grid a {
+  text-decoration: none;
+  color: #999999;
+}
+
+footer .footer-grid .grid-2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+footer .footer-grid .grid-2 .title {
+  font-weight: bold;
 }
 /*# sourceMappingURL=index.css.map */
