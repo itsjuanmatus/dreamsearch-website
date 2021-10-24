@@ -18,28 +18,28 @@ html {
 h1 {
   margin: 0;
   font-family: "Montserrat";
-  size: 52px;
+  size: 3.2rem;
   text-align: center;
 }
 
 h2 {
   margin: 0;
   font-family: "Roboto";
-  size: 24px;
+  size: 1.5rem;
   text-align: center;
 }
 
 h3 {
   margin: 0;
   font-family: "Montserrat";
-  size: 22px;
+  size: 1.4rem;
   text-align: center;
 }
 
 p {
   margin: 0;
   font-family: "Roboto";
-  size: 18px;
+  size: 1.2rem;
   text-align: center;
 }
 
@@ -47,7 +47,7 @@ p {
   border: none;
   color: $white;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 0.8rem;
   padding-inline: 47px;
   padding-block: 9.3px;
   border-radius: 40px;
@@ -87,11 +87,15 @@ p {
 }
 
 .mb {
-  margin-bottom: 26.5px;
+  margin-bottom: 1.5rem;
 }
 
 .text-white {
   color: $white;
+}
+
+.text-brownish-grey {
+  color: $brownish-grey;
 }
 
 .center {
@@ -100,16 +104,17 @@ p {
 }
 
 .mt-15 {
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 
 .user-buttons {
   position: absolute;
-  margin-top: 20px;
+  margin-top: 1.2rem;
 }
 
 .bg-white {
   color: $white;
+  padding-block: 2rem;
 }
 
 .text-gray {
@@ -117,5 +122,171 @@ p {
 }
 
 .image-grid {
-  
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  .step {
+    margin: 0;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 18.75rem;
+    height: 15rem;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.56s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+        0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+    }
+
+    .step_image {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .step_text {
+      position: absolute;
+      padding-inline: 1.2rem;
+      display: grid;
+      gap: 0.8rem;
+
+      h3,
+      p {
+        text-align: start;
+      }
+    }
+  }
+}
+
+.step-pill {
+  background-color: $light-red;
+  padding-inline: 0.8rem;
+  padding-block: 0.2rem;
+  border-radius: 2.5rem;
+  max-width: max-content;
+  font-family: "Montserrat";
+}
+
+
+
+
+.partners-grid {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+
+  .partner {
+    display: grid;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-inline: 0.5rem;
+    padding: 1rem;
+
+    img {
+      margin: auto;
+    }
+    h3 {
+      color: $darker-grey;
+    }
+
+    p {
+      color: $darker-grey;
+    }
+  }
+}
+
+.btn-patterns {
+  color: $light-red;
+  background-color: transparent;
+  border: 2px solid;
+  width: 100%;
+  margin-top: 2.8rem;
+  text-align: start;
+  padding-left: 1.4rem;
+}
+
+.partners {
+  padding-inline: 0.7rem;
+}
+
+.activities-grid {
+  display: grid;
+  padding-inline: 1rem;
+  justify-content: center;
+
+  .activity {
+    margin: 0;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 18.75rem;
+    height: 7.5rem;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.56s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+        0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position:  100% 40%;
+    }
+
+    .couple {
+      object-position: 100% 0;
+
+    }
+
+    .activity-text {
+      position: absolute;
+      padding-inline: 1.2rem;
+      display: grid;
+      gap: 0.8rem;
+    }
+  }
+}
+.grid {
+  display: grid;
+  padding: 1.2rem;
+}
+.interest-input {
+  display: flex;
+  justify-self: center;
+  border: 1 solid;
+  border-radius: 0.2rem;
+  padding-block: 0.6rem;
+  padding-left: 0.6rem;
+  width: 100%;
+  color: #999999;
 }
