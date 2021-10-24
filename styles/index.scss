@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap");
+$light-red: #ff4e50;
+$darker-grey: #444444;
+$aqua: #19d4ca;
+$yellowish-orange: #ffa710;
+$cornflower: #667df3;
+$white: #ffffff;
+$brownish-grey: #666666;
+$verylight-grey: #f7f3f2;
+$verylight-pink: #e3e3e3;
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Montserrat";
+  size: 52px;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  font-family: "Roboto";
+  size: 24px;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-family: "Montserrat";
+  size: 22px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  font-family: "Roboto";
+  size: 18px;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  color: $white;
+  font-family: Montserrat;
+  font-size: 14px;
+  padding-inline: 47px;
+  padding-block: 9.3px;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.light-red {
+  background: $light-red;
+}
+
+.login {
+  background: transparent;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.signup {
+  background: transparent;
+  font-family: "Montserrat";
+  font-weight: 400;
+  border-color: $white;
+  border: 2px solid;
+}
+
+.banner {
+  background-image: url("/assets/images/backgroundBitmap.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  margin: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.mb {
+  margin-bottom: 26.5px;
+}
+
+.text-white {
+  color: $white;
+}
+
+.center {
+  display: grid;
+  justify-items: center;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.user-buttons {
+  position: absolute;
+  margin-top: 20px;
+}
+
+.bg-white {
+  color: $white;
+}
+
+.text-gray {
+  color: $darker-grey;
+}
+
+.image-grid {
+  
+}
