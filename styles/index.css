@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap");
+@-webkit-keyframes headingEntrance {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0px;
+  }
+}
+@keyframes headingEntrance {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
 .banner {
   background-image: url("/assets/images/backgroundBitmap.png");
   height: 100%;
@@ -12,6 +29,18 @@
   -ms-flex-line-pack: center;
       align-content: center;
   justify-items: center;
+}
+
+.banner h1 {
+  -webkit-animation: headingEntrance 3s;
+          animation: headingEntrance 3s;
+  position: relative;
+}
+
+.banner .center h3 {
+  -webkit-animation: headingEntrance 3s;
+          animation: headingEntrance 3s;
+  position: relative;
 }
 
 .nav {
@@ -58,9 +87,15 @@
 h1 {
   margin: 0;
   font-family: "Montserrat";
-  font-size: 3.2rem;
+  font-size: 1.8rem;
   text-align: center;
   color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
 }
 
 h2 {
@@ -105,12 +140,21 @@ p {
   font-weight: 400;
 }
 
+.login:hover {
+  color: #ff4e50;
+}
+
 .signup {
   background: transparent;
   font-family: "Montserrat";
   font-weight: 400;
   border-color: white;
   border: 2px solid;
+}
+
+.signup:hover {
+  background: white;
+  color: #444444;
 }
 
 .search-partners {
@@ -125,6 +169,23 @@ p {
   display: flex;
   justify-self: center;
   width: 100%;
+}
+
+.search-partners:hover {
+  background-color: #ffa710;
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em;
+          box-shadow: 0 0.5em 0.5em -0.4em;
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.btn-light-red {
+  background-color: #ff4e50;
+}
+
+.btn-light-red:hover {
+  background-color: white;
+  color: #ff4e50;
 }
 
 .image-grid {
@@ -207,6 +268,10 @@ p {
   text-align: start;
 }
 
+.image-grid .step .step_text p {
+  font-size: 1rem;
+}
+
 .step-pill {
   background-color: #ff4e50;
   padding-inline: 0.8rem;
@@ -267,9 +332,12 @@ p {
   margin-top: 2.8rem;
   text-align: start;
   padding-left: 1.4rem;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
+  max-width: 18rem;
+}
+
+.btn-partners:hover {
+  background-color: #ff4e50;
+  color: white;
 }
 
 .partners-grid {
@@ -294,7 +362,7 @@ p {
 
 .partners-grid .partner h3,
 .partners-grid .partner p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #444444;
 }
 
@@ -449,6 +517,11 @@ p {
   margin-top: 1rem;
 }
 
+.search-partners-box {
+  display: -ms-grid;
+  display: grid;
+}
+
 @media only screen and (min-width: 768px) {
   .activities-section {
     display: -ms-grid;
@@ -537,7 +610,7 @@ p {
     width: 100%;
     height: 100%;
   }
-  .search-partners-box {
+  .activities-grid .search-partners-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -547,7 +620,7 @@ p {
     width: -moz-max-content;
     width: max-content;
   }
-  .search-partners-box .search-partners {
+  .activities-grid .search-partners-box .search-partners {
     max-width: 100%;
   }
   .holiday-activity {
@@ -575,6 +648,7 @@ footer .footer-grid {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
+  justify-items: center;
 }
 
 footer .footer-grid h3 {
@@ -597,7 +671,9 @@ footer .footer-grid .grid {
           flex-flow: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 1rem;
   margin-top: 0.5rem;
   padding: 0;
@@ -630,6 +706,12 @@ footer .footer-grid .grid-2 .title {
   font-weight: bold;
 }
 
+footer .footer-grid .grid-3 {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
 @media only screen and (min-width: 768px) {
   footer .footer-grid {
     display: -ms-grid;
@@ -658,6 +740,10 @@ body,
 html {
   height: 100%;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .light-red {

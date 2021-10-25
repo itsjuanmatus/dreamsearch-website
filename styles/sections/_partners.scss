@@ -1,6 +1,5 @@
 @import "../variables/variables";
 
-
 .btn-partners {
   color: $light-red;
   background-color: transparent;
@@ -9,9 +8,12 @@
   margin-top: 2.8rem;
   text-align: start;
   padding-left: 1.4rem;
-  max-width: max-content;
+  max-width: 18rem;
+  &:hover {
+    background-color: $light-red;
+    color: white;
+  }
 }
-
 
 .partners-grid {
   display: grid;
@@ -27,7 +29,7 @@
 
     h3,
     p {
-      font-size: 0.8rem;
+      font-size: 1rem;
       color: $darker-grey;
     }
 
@@ -36,12 +38,12 @@
       width: 7rem;
     }
   }
-  
 }
 .partners {
-    display: grid;
-    justify-items: center;
-  }
+  display: grid;
+  justify-items: center;
+}
+
 @media only screen and (min-width: 768px) {
   .partners-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -66,7 +68,7 @@
       }
     }
   }
-   
+
   .btn-partners {
     color: $light-red;
     background-color: transparent;
@@ -77,7 +79,6 @@
     padding-inline: 5rem;
     max-width: max-content;
   }
-
 }
 
 @media only screen and (min-width: 992px) {
@@ -85,5 +86,4 @@
     grid-template-columns: repeat(4, minmax(0, 0.5fr));
     max-width: max-content;
   }
-  
 }

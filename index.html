@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
     <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./assets/images/areto.png"
+    />
     <title>DREAMSEARCH</title>
   </head>
   <body>
     <div class="banner">
       <div class="nav">
-        <h3 class="mb text-white">DREAMSEARCH</h3>
+        <a href="#">
+          <h3 class="mb text-white">DREAMSEARCH</h3>
+        </a>
         <div>
           <button class="btn login">Log in</button>
           <button class="btn signup">Sign up</button>
@@ -21,7 +28,9 @@
         <h3 class="mb text-white">DREAMSEARCH</h3>
         <h1 class="text-white">SHARE YOUR HOLIDAY DREAM</h1>
         <p class="text-white">And find the perfect partner to fullfill it</p>
-        <button class="mt-15 btn light-red">Find your holiday partner</button>
+        <button class="mt-15 btn btn-light-red">
+          Find your holiday partner
+        </button>
       </div>
     </div>
     <div class="bg-white how-it-works">
@@ -159,19 +168,19 @@
       <h3 class="text-gray">Create your holiday activity</h3>
 
       <p class="text-brownish-grey">Hi! What are your holiday interests?</p>
-      <div class="search-partners-box">
+      <form class="search-partners-box">
         <input
           type="text"
           class="interest-input"
           placeholder="Enter your interests"
         />
         <button class="btn light-red search-partners">Search partners</button>
-      </div>
+      </form>
     </div>
     <footer>
       <div class="footer-grid">
         <h3 class="text-light-red light logo">DREAMSEARCH</h3>
-        <div class="">
+        <div>
           <h3>Company</h3>
           <div class="grid">
             <a href="#">
