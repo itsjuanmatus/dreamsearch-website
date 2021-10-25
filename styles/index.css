@@ -47,12 +47,18 @@
   .nav h3 {
     display: block;
   }
+  .center h1 {
+    padding-inline: 20%;
+  }
+  .center h3 {
+    display: none;
+  }
 }
 
 h1 {
   margin: 0;
   font-family: "Montserrat";
-  size: 3.2rem;
+  font-size: 3.2rem;
   text-align: center;
   color: white;
 }
@@ -60,7 +66,7 @@ h1 {
 h2 {
   margin: 0;
   font-family: "Roboto";
-  size: 1.5rem;
+  font-size: 1.5rem;
   text-align: center;
   color: white;
 }
@@ -68,7 +74,7 @@ h2 {
 h3 {
   margin: 0;
   font-family: "Montserrat";
-  size: 1.4rem;
+  font-size: 1.4rem;
   text-align: center;
   color: white;
 }
@@ -76,7 +82,7 @@ h3 {
 p {
   margin: 0;
   font-family: "Roboto";
-  size: 1.2rem;
+  font-size: 1.2rem;
   text-align: center;
   color: white;
 }
@@ -118,6 +124,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   justify-self: center;
+  width: 100%;
 }
 
 body,
@@ -273,16 +280,15 @@ html {
   padding: 1rem;
 }
 
+.partners-grid .partner h3,
+.partners-grid .partner p {
+  font-size: 0.8rem;
+  color: #444444;
+}
+
 .partners-grid .partner img {
   margin: auto;
-}
-
-.partners-grid .partner h3 {
-  color: #444444;
-}
-
-.partners-grid .partner p {
-  color: #444444;
+  width: 7rem;
 }
 
 .btn-patterns {
@@ -418,6 +424,12 @@ footer .footer-grid {
 
 footer .footer-grid h3 {
   font-size: 0.8rem;
+  color: #444444;
+}
+
+footer .footer-grid .logo {
+  color: #ff4e50;
+  font-size: 1rem;
 }
 
 footer .footer-grid .grid {
@@ -430,9 +442,7 @@ footer .footer-grid .grid {
           flex-flow: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-items: center;
   margin-top: 1rem;
   margin-top: 0.5rem;
   padding: 0;
@@ -443,6 +453,7 @@ footer .footer-grid .grid p {
   padding: 0.5rem;
   cursor: pointer;
   font-size: 0.8rem;
+  color: #444444;
 }
 
 footer .footer-grid .grid a {
@@ -508,6 +519,7 @@ footer .footer-grid .grid-2 .title {
   }
   .partners-grid .partner p {
     color: #444444;
+    padding-inline: 15%;
   }
   .btn-patterns {
     color: #ff4e50;
@@ -534,9 +546,9 @@ footer .footer-grid .grid-2 .title {
     -ms-grid-rows: (15rem)[3];
         grid-template-rows: repeat(3, 15rem);
     grid-gap: 10px;
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
-    max-width: max-content;
+    width: 100%;
+    max-width: 55vw;
+    margin-top: 2rem;
   }
   .activities-grid .a1 {
     -ms-grid-column: 1;
@@ -607,6 +619,64 @@ footer .footer-grid .grid-2 .title {
     grid-row-end: 4;
     width: 100%;
     height: 100%;
+  }
+  .search-patterns-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+    justify-self: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .search-patterns-box .search-patterns {
+    max-width: 100%;
+  }
+  .holiday-activity {
+    gap: 1rem;
+  }
+  footer .footer-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(0, 1fr))[4];
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  footer .footer-grid .grid,
+  footer .footer-grid .grid-2,
+  footer .footer-grid .grid-3 {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -ms-flex-line-pack: start;
+        align-content: start;
+    padding: 0;
+  }
+  footer .footer-grid .grid h3,
+  footer .footer-grid .grid-2 h3,
+  footer .footer-grid .grid-3 h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .how-it-works h3 {
+    margin-block: 2rem;
+  }
+  .how-it-works .image-grid .step {
+    width: 18.75rem;
+    height: 25rem;
+  }
+  .partners-grid {
+    -ms-grid-columns: (minmax(0, 0.5fr))[4];
+        grid-template-columns: repeat(4, minmax(0, 0.5fr));
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .activities-grid {
+    -ms-grid-rows: (20rem)[3];
+        grid-template-rows: repeat(3, 20rem);
   }
 }
 /*# sourceMappingURL=index.css.map */
