@@ -64,6 +64,7 @@
   color: #999999;
   margin-top: 1rem;
 }
+
 .search-partners-box {
   display: grid;
 }
@@ -141,14 +142,15 @@
       height: 100%;
     }
 
-    .search-partners-box {
-      display: flex;
-      gap: 2rem;
-      justify-self: center;
-      width: max-content;
-      .search-partners {
-        max-width: 100%;
-      }
+    
+  }
+  .search-partners-box {
+    display: flex;
+    gap: 2rem;
+    justify-self: center;
+    width: max-content;
+    .search-partners {
+      max-width: 100%;
     }
   }
 

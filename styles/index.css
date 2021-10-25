@@ -610,7 +610,7 @@ p {
     width: 100%;
     height: 100%;
   }
-  .activities-grid .search-partners-box {
+  .search-partners-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -620,7 +620,7 @@ p {
     width: -moz-max-content;
     width: max-content;
   }
-  .activities-grid .search-partners-box .search-partners {
+  .search-partners-box .search-partners {
     max-width: 100%;
   }
   .holiday-activity {
