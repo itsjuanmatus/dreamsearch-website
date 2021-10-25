@@ -1,0 +1,89 @@
+@import "../variables/variables";
+
+
+.btn-partners {
+  color: $light-red;
+  background-color: transparent;
+  border: 2px solid;
+  width: 100%;
+  margin-top: 2.8rem;
+  text-align: start;
+  padding-left: 1.4rem;
+  max-width: max-content;
+}
+
+
+.partners-grid {
+  display: grid;
+  justify-content: center;
+  margin-top: 1rem;
+
+  .partner {
+    display: grid;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-inline: 0.5rem;
+    padding: 1rem;
+
+    h3,
+    p {
+      font-size: 0.8rem;
+      color: $darker-grey;
+    }
+
+    img {
+      margin: auto;
+      width: 7rem;
+    }
+  }
+  
+}
+.partners {
+    display: grid;
+    justify-items: center;
+  }
+@media only screen and (min-width: 768px) {
+  .partners-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    .partner {
+      display: grid;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-inline: 0.5rem;
+      padding: 1rem;
+
+      img {
+        margin: auto;
+      }
+      h3 {
+        color: $darker-grey;
+      }
+
+      p {
+        color: $darker-grey;
+        padding-inline: 15%;
+      }
+    }
+  }
+   
+  .btn-partners {
+    color: $light-red;
+    background-color: transparent;
+    border: 2px solid;
+    width: 100%;
+    margin-top: 2.8rem;
+    text-align: center;
+    padding-inline: 5rem;
+    max-width: max-content;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+  .partners-grid {
+    grid-template-columns: repeat(4, minmax(0, 0.5fr));
+    max-width: max-content;
+  }
+  
+}

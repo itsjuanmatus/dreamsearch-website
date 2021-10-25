@@ -1,0 +1,101 @@
+@import "../variables/variables";
+
+.image-grid {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+
+  .step {
+    margin: 0;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 18.75rem;
+    height: 15rem;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.56s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+        0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+    }
+
+    .step_image {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .step_overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+    .step_text {
+      position: absolute;
+      padding-inline: 1.2rem;
+      display: grid;
+      gap: 0.8rem;
+
+      h3,
+      p {
+        text-align: start;
+      }
+    }
+  }
+}
+
+.step-pill {
+  background-color: $light-red;
+  padding-inline: 0.8rem;
+  padding-block: 0.2rem;
+  border-radius: 2.5rem;
+  max-width: max-content;
+  font-family: "Montserrat";
+  font-size: 0.6rem;
+  align-items: center;
+  max-height: 1.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .how-it-works {
+    display: grid;
+    justify-content: center;
+    .image-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      .step {
+        width: 14.75rem;
+        height: 25rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .how-it-works {
+    h3 {
+      margin-block: 2rem;
+    }
+    .image-grid {
+      .step {
+        width: 18.75rem;
+        height: 25rem;
+        align-content: center;
+      }
+    }
+  }
+}

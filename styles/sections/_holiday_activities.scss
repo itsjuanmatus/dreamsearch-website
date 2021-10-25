@@ -1,0 +1,156 @@
+.activities-grid {
+  display: grid;
+  padding-inline: 1rem;
+  justify-content: center;
+
+  .activity {
+    margin: 0;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 18.75rem;
+    height: 7.5rem;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.56s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+        0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 100% 40%;
+    }
+
+    .couple {
+      object-position: 100% 0;
+    }
+
+    .activity-text {
+      position: absolute;
+      padding-inline: 1.2rem;
+      display: grid;
+      gap: 0.8rem;
+    }
+  }
+}
+
+.interest-input {
+  display: flex;
+  justify-self: center;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.2rem;
+  padding-block: 0.6rem;
+  padding-left: 0.6rem;
+  padding-right: 8rem;
+  width: 100%;
+  max-width: max-content;
+  color: #999999;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .activities-section {
+    display: grid;
+    justify-items: center;
+  }
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 15rem);
+    grid-gap: 10px;
+    width: 100%;
+    max-width: 55vw;
+    margin-top: 2rem;
+
+    .a1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      width: 100%;
+      height: 100%;
+    }
+    .a2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      width: 100%;
+      height: 100%;
+    }
+    .a3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      width: 100%;
+      height: 100%;
+    }
+    .a4 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      width: 100%;
+      height: 100%;
+    }
+    .a5 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      width: 100%;
+      height: 100%;
+    }
+    .a6 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      width: 100%;
+      height: 100%;
+    }
+    .a7 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .search-partners-box {
+    display: flex;
+    gap: 2rem;
+    justify-self: center;
+    width: max-content;
+    .search-partners {
+      max-width: 100%;
+    }
+  }
+
+  .holiday-activity {
+    gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .activities-grid {
+    grid-template-rows: repeat(3, 20rem);
+  }
+}
