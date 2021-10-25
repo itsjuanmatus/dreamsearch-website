@@ -1,0 +1,38 @@
+.banner {
+  background-image: url("/assets/images/backgroundBitmap.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  display: grid;
+  margin: 0;
+  align-content: center;
+  justify-items: center;
+}
+
+.nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+  h3 {
+    display: none;
+    margin: 0;
+  }
+  
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vw;
+    h3 {
+      display:block;
+    }
+  }
+}
